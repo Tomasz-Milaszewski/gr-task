@@ -5,9 +5,9 @@ class Navigation extends Component {
         return (
             <nav className="Navigation-container">
                 <div className="Navigation-content-container">
-                    <div className="Navigation-content-active">DASHBOARD<hr /></div>
-                    <div className="Navigation-content-passive">RECIPES<hr /></div>
-                    <div className="Navigation-content-passive">CHALLENGE<hr /></div>
+                    <div className="Navigation-content-active"><a href="">DASHBOARD<hr /></a></div>
+                    <div className="Navigation-content-passive"><a href="">RECIPES<hr /></a></div>
+                    <div className="Navigation-content-passive"><a href="">CHALLENGE<hr /></a></div>
                 </div>
                 <div className="Navigation-user-container">
                     <div className="Navigation-user-image"></div>
