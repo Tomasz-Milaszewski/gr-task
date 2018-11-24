@@ -7,12 +7,12 @@
 	box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.13);
 	display: flex;
 	justify-content: space-between;
+	font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
 }
 .Navigation-content-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	margin-top: 34px;
@@ -50,7 +50,6 @@
 	background: url('../../images/navigation-user.png') no-repeat center center;
 }
 .Navigation-user-name {
-	font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	color: #7c7c7c;
 	margin-left: 11px;

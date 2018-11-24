@@ -4,6 +4,7 @@
   height: 112px;
   border-top: 1px solid rgb(240, 240, 240);
   background: rgb(249, 249, 249);
+  font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
 }
 /* progress bullets */
 .HeroWeeks-progress-container{
@@ -57,4 +58,30 @@ span.line-future {
   font-size: 9px;
   color: #bdbdbd;
   text-align: center;
+}
+
+/* weeks-slider */
+.HeroWeeks-slider-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 134px;
+}
+.HeroWeeks-slider-container button {
+  width: 26px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+  cursor: pointer;
+}
+.HeroWeeks-slider-container button:first-child {
+  background: url('../../images/heroweeks-slider-arrow-left.png') no-repeat center center;
+}
+.HeroWeeks-slider-container button:last-child {
+  background: url('../../images/heroweeks-slider-arrow-right.png') no-repeat center center;
+}
+.HeroWeeks-slider-current-week {
+  font-size: 48px;
+  color: #ff801a;
+  margin: 0px 45px;
 }
