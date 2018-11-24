@@ -18,29 +18,29 @@ class HeroWeeks extends Component {
         <div class="HeroWeeks-progress-container">
           <p>	YOUR 12 WEEK PROGRESS</p>
           <div class="HeroWeeks-bullets-container">
-            <span></span> 
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span className="bullet-past"></span> 
+            <span className="line-past"></span>
+            <span className="bullet-past"></span>
+            <span className="line-past"></span>
+            <span className="bullet-past"></span>
+            <span className="line-past"></span>
+            <span className="bullet-past"></span>
+            <span className="line-past"></span>
+            <span className="bullet-past"></span>
+            <span className="line-past"></span>
+            <span className="bullet-past"></span>
+            <span className="line-future"></span>
+            <span className="bullet-empty"></span>
+            <span className="line-future"></span>
+            <span className="bullet-future"></span>
+            <span className="line-future"></span>
+            <span className="bullet-future"></span>
+            <span className="line-future"></span>
+            <span className="bullet-future"></span>
+            <span className="line-future"></span>
+            <span className="bullet-future"></span>
+            <span className="line-future"></span>
+            <span className="bullet-future"></span>
           </div>
           <div class="HeroWeeks-week-numbers-container">
             <span>1</span>

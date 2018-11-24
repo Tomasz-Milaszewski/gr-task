@@ -7,18 +7,24 @@
 }
 /* progress bullets */
 .HeroWeeks-progress-container{
-  margin-top: 14px;
-  margin-bottom: 6px;
+  width: 338px;
 }
 .HeroWeeks-progress-container p{
   font-size: 9px;
   color: #bdbdbd;
 }
+.HeroWeeks-bullets-container {
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
 .HeroWeeks-bullets-container span{
+  display: inline-block;
   width: 10px;
   height: 10px;
 }
 span.bullet-empty {
+  width: 8px;
+  height: 8px;
   background: rgb(249, 249, 249);
   border-radius: 50%;
   border: 1px solid #bdbdbd;
@@ -28,6 +34,7 @@ span.bullet-past {
   border-radius: 50%;
 }
 span.line-past {
+  height: 2px;
   background: #addb0c;
   border-top: 4px solid rgb(249,249,249);
   border-bottom: 4px solid rgb(249,249,249);
@@ -37,13 +44,17 @@ span.bullet-future {
   border-radius: 50%;
 }
 span.line-future {
+  height: 2px;
   background: #bdbdbd;
   border-top: 4px solid rgb(249,249,249);
   border-bottom: 4px solid rgb(249,249,249);
 }
 .HeroWeeks-week-numbers-container span{
+  display: inline-block;
   width: 10px;
   height: 10px;
+  margin-right: 10px;
   font-size: 9px;
   color: #bdbdbd;
+  text-align: center;
 }
