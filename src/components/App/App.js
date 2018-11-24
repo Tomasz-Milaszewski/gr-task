@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import DashboardView from "../DashboardView/DashboardView";
 class App extends Component {
   render() {
     return (
-      <header>Hello</header>
+      <DashboardView></DashboardView>
     )
   }
 }
