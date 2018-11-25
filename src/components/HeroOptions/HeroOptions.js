@@ -12,16 +12,39 @@ import chicken_active from '../../images/herooptions-chicken-active.png'
 import chicken_nonactive from '../../images/herooptions-chicken-nonactive.png'
 class HeroOptions extends Component {
 
+state = {
+  broccoliClicks: 0,
+  cheeseClicks: 0,
+  meatClicks: 0,
+  fishClicks: 0,
+  chickenClicks: 0
+}
+
+  handleClickBroccoli = () => {
+    this.setState({broccoliClicks: this.state.broccoliClicks + 1})
+  }
+  handleClickCheese = () => {
+    this.setState({cheeseClicks: this.state.cheeseClicks + 1})
+  }
+  handleClickMeat = () => {
+    this.setState({meatClicks: this.state.meatClicks + 1})
+  }
+  handleClickFish = () => {
+    this.setState({fishClicks: this.state.fishClicks + 1})
+  }
+  handleClickChicken = () => {
+    this.setState({chickenClicks: this.state.chickenClicks + 1})
+  }
   render() {
     return (
       <div className="HeroOptions-container">
         <p>SELECT YOUR PROTEIN OPTIONS</p>
         <div className="HeroOptions-icons-container">
-          <img src={broccoli_active} alt="Broccoli" />
-          <img src={cheese_active} alt="Cheese" />
-          <img src={meat_active} alt="Meat" />
-          <img src={fish_active} alt="Fish" />
-          <img src={chicken_active} alt="Chicken" />
+          <img src={(this.state.broccoliClicks % 2 === 0 ? broccoli_active : broccoli_nonactive)} alt="Broccoli" onClick={this.handleClickBroccoli}/>
+          <img src={(this.state.cheeseClicks % 2 === 0 ? cheese_active : cheese_nonactive)} alt="Cheese" onClick={this.handleClickCheese}/>
+          <img src={(this.state.meatClicks % 2 === 0 ? meat_active : meat_nonactive)} alt="Meat" onClick={this.handleClickMeat}/>
+          <img src={(this.state.fishClicks % 2 === 0 ? fish_active : fish_nonactive)} alt="Fish" onClick={this.handleClickFish}/>
+          <img src={(this.state.chickenClicks % 2 === 0 ? chicken_active : chicken_nonactive)} alt="Chicken" onClick={this.handleClickChicken}/>
         </div>
       </div>
     )

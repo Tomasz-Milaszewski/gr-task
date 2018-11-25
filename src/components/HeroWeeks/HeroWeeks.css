@@ -82,7 +82,7 @@ span.line-future {
   background: url('../../images/heroweeks-slider-arrow-right.png') no-repeat center center;
 }
 .HeroWeeks-slider-current-week {
-  font-size: 48px;
+  font-size: 35px;
   color: #ff801a;
   margin: 0px 45px;
 }
