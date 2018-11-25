@@ -11,9 +11,9 @@ class HeroWeeks extends Component {
     weeks: PropTypes.array
   }
 
-  renderWeeksProgres = () => {
+  renderWeeksBullets = () => {
     const classesArray = [];
-    for (let i = 1; i <= this.props.weeks.length; i++) {
+    for (let i = 1; i < this.props.weeks.length; i++) {
       if (i < this.state.currentWeek) {
         if (i === 1) { classesArray.push('bullet-past') }
         classesArray.push('line-past');
@@ -39,11 +39,10 @@ class HeroWeeks extends Component {
         <div className="HeroWeeks-progress-container">
           <p>	YOUR 12 WEEK PROGRESS</p>
           <div className="HeroWeeks-bullets-container">
-            
-
-
-
-            <span className="bullet-past"></span>
+            {this.renderWeeksBullets().map((element) =>
+              <span className={element}></span>
+            )}
+            {/* <span className="bullet-past"></span>
             <span className="line-past"></span>
             <span className="bullet-past"></span>
             <span className="line-past"></span>
@@ -65,7 +64,7 @@ class HeroWeeks extends Component {
             <span className="line-future"></span>
             <span className="bullet-future"></span>
             <span className="line-future"></span>
-            <span className="bullet-future"></span>
+            <span className="bullet-future"></span> */}
           </div>
           <div className="HeroWeeks-week-numbers-container">
             <span>1</span>
