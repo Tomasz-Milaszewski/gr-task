@@ -13,14 +13,17 @@ class HeroWeeks extends Component {
 
   renderWeeksBullets = () => {
     const classesArray = [];
-    for (let i = 1; i < this.props.weeks.length; i++) {
+    for (let i = 1; i <= this.props.weeks.length; i++) {
       if (i < this.state.currentWeek) {
-        if (i === 1) { classesArray.push('bullet-past') }
-        classesArray.push('line-past');
-        classesArray.push('bullet-past');
+        if (i === 1) {
+          classesArray.push('bullet-past')
+        } else {
+          classesArray.push('line-past');
+          classesArray.push('bullet-past');
+        }
       } else {
         if (i === this.state.currentWeek) {
-          classesArray.push('line-future');
+          i !== 1 && classesArray.push('line-future');
           classesArray.push('bullet-empty');
         } else {
           classesArray.push('line-future');
@@ -42,29 +45,6 @@ class HeroWeeks extends Component {
             {this.renderWeeksBullets().map((element) =>
               <span className={element}></span>
             )}
-            {/* <span className="bullet-past"></span>
-            <span className="line-past"></span>
-            <span className="bullet-past"></span>
-            <span className="line-past"></span>
-            <span className="bullet-past"></span>
-            <span className="line-past"></span>
-            <span className="bullet-past"></span>
-            <span className="line-past"></span>
-            <span className="bullet-past"></span>
-            <span className="line-past"></span>
-            <span className="bullet-past"></span>
-            <span className="line-future"></span>
-            <span className="bullet-empty"></span>
-            <span className="line-future"></span>
-            <span className="bullet-future"></span>
-            <span className="line-future"></span>
-            <span className="bullet-future"></span>
-            <span className="line-future"></span>
-            <span className="bullet-future"></span>
-            <span className="line-future"></span>
-            <span className="bullet-future"></span>
-            <span className="line-future"></span>
-            <span className="bullet-future"></span> */}
           </div>
           <div className="HeroWeeks-week-numbers-container">
             <span>1</span>
