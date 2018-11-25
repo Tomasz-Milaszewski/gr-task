@@ -31,7 +31,6 @@ class HeroWeeks extends Component {
         }
       }
     }
-    console.log(classesArray);
     return classesArray;
   };
 
@@ -42,6 +41,13 @@ class HeroWeeks extends Component {
     }
     return numbersArray;
   };
+
+  handleClickLeft = () => {
+    this.setState({ currentWeek: this.state.currentWeek - 1 })
+  }
+  handleClickRight = () => {
+    this.setState({ currentWeek: this.state.currentWeek + 1 })
+  }
 
   render() {
     return (
@@ -62,9 +68,9 @@ class HeroWeeks extends Component {
         </div>
 
         <div className="HeroWeeks-slider-container">
-          <button className="HeroWeeks-slider-arrow-left"></button>
+          <button className="HeroWeeks-slider-arrow-left" style={(this.state.currentWeek === 1) ? { visibility: 'hidden' } : { visibility: 'visible' }} onClick={this.handleClickLeft}></button>
           <p className="HeroWeeks-slider-current-week">{`Week ${this.state.currentWeek}`}</p>
-          <button className="HeroWeeks-slider-arrow-right"></button>
+          <button className="HeroWeeks-slider-arrow-right" style={(this.state.currentWeek === this.props.weeks.length) ? { visibility: 'hidden' } : { visibility: 'visible' }} onClick={this.handleClickRight}></button>
         </div>
       </div>
     )
@@ -72,6 +78,3 @@ class HeroWeeks extends Component {
 }
 
 export default HeroWeeks
-
-// {'&#8226'} full bullet
-// {'&#9702'} empty bullet
