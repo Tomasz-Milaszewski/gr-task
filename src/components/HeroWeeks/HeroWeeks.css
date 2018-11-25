@@ -23,13 +23,6 @@
   width: 10px;
   height: 10px;
 }
-span.bullet-empty {
-  width: 8px;
-  height: 8px;
-  background: rgb(249, 249, 249);
-  border-radius: 50%;
-  border: 1px solid #bdbdbd;
-}
 span.bullet-past {
   background: #addb0c;
   border-radius: 50%;
@@ -39,6 +32,13 @@ span.line-past {
   background: #addb0c;
   border-top: 4px solid rgb(249,249,249);
   border-bottom: 4px solid rgb(249,249,249);
+}
+span.bullet-empty {
+  width: 8px;
+  height: 8px;
+  background: rgb(249, 249, 249);
+  border-radius: 50%;
+  border: 1px solid #bdbdbd;
 }
 span.bullet-future {
   background: #bdbdbd;
