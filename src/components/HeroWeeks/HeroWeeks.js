@@ -13,11 +13,11 @@ class HeroWeeks extends Component {
 
   render() {
     return (
-      <div class="HeroWeeks-container">
+      <div className="HeroWeeks-container">
         
-        <div class="HeroWeeks-progress-container">
+        <div className="HeroWeeks-progress-container">
           <p>	YOUR 12 WEEK PROGRESS</p>
-          <div class="HeroWeeks-bullets-container">
+          <div className="HeroWeeks-bullets-container">
             <span className="bullet-past"></span> 
             <span className="line-past"></span>
             <span className="bullet-past"></span>
@@ -42,7 +42,7 @@ class HeroWeeks extends Component {
             <span className="line-future"></span>
             <span className="bullet-future"></span>
           </div>
-          <div class="HeroWeeks-week-numbers-container">
+          <div className="HeroWeeks-week-numbers-container">
             <span>1</span>
             <span>2</span>
             <span>3</span>
@@ -58,10 +58,10 @@ class HeroWeeks extends Component {
           </div>
         </div>
         
-        <div class="HeroWeeks-slider-container">
-          <button class="HeroWeeks-slider-arrow-left"></button>
-          <p class="HeroWeeks-slider-current-week">{`Week ${this.state.currentWeek}`}</p>
-          <button class="HeroWeeks-slider-arrow-right"></button>
+        <div className="HeroWeeks-slider-container">
+          <button className="HeroWeeks-slider-arrow-left"></button>
+          <p className="HeroWeeks-slider-current-week">{`Week ${this.state.currentWeek}`}</p>
+          <button className="HeroWeeks-slider-arrow-right"></button>
         </div>
       </div>
     )
