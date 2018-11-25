@@ -1,27 +1,42 @@
 .HeroDaysHours-container {
+  box-sizing: border-box;
   width: 96px;
-  background: url('../../images/pattern.png') repeat center center;
+  background: url('../../images/herodays-pattern.png') repeat center center;
   font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
   font-size: 13px;
   color: #828282;
-  margin-left: 18px;
+  border-top-left-radius: 5px;
+}
+.HeroDaysHours-container b{
+  font-weight: bold;
 }
 .HeroDaysHours-top {
   height: 52px;
-  border-top-left-radius: 2px;
 }
 .HeroDaysHours-hour {
   height: 90px;
-  border-bottom: 2px solid rgb(243, 243, 243);
+  border-bottom: 2px solid rgb(212, 212, 212);
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
 }
 .HeroDaysHours-hour-last {
   height: 90px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
 }
-.HeroDaysHours-hour-bottom {
+.HeroDaysHours-bottom {
   height: 34px;
-  border-bottom: 2px solid rgb(243, 243, 243);
+  border-bottom: 2px solid rgb(212, 212, 212);
 }
-.HeroDaysHours-hour-bottom-workout {
+.HeroDaysHours-bottom-workout {
   height: 34px;
   font-size: 11px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+}
+.HeroDaysHours-bottom-workout small{
+  font-size: 8px;
 }

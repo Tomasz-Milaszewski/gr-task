@@ -6,13 +6,13 @@ class HeroDaysHours extends Component {
     return (
       <div className="HeroDaysHours-container">
         <div className="HeroDaysHours-top"></div>
-        <div className="HeroDaysHours-hour"><strong>6:00</strong> AM</div>
-        <div className="HeroDaysHours-hour"><strong>9:00</strong> AM</div>
-        <div className="HeroDaysHours-hour"><strong>12:00</strong> PM</div>
-        <div className="HeroDaysHours-hour"><strong>3:00</strong> PM</div>
-        <div className="HeroDaysHours-hour-last"><strong>6:00</strong> PM</div>
+        <div className="HeroDaysHours-hour"><b>6:00</b>AM</div>
+        <div className="HeroDaysHours-hour"><b>9:00</b>AM</div>
+        <div className="HeroDaysHours-hour"><b>12:00</b>PM</div>
+        <div className="HeroDaysHours-hour"><b>3:00</b>PM</div>
+        <div className="HeroDaysHours-hour-last"><b>6:00</b>PM</div>
         <div className="HeroDaysHours-bottom"></div>
-        <div className="HeroDaysHours-bottom-workout">Workout&#9658;</div>
+        <div className="HeroDaysHours-bottom-workout">Workout&nbsp;<small>&#9658;</small></div>
       </div>
     )
   }
