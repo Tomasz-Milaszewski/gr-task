@@ -35,30 +35,29 @@ class HeroWeeks extends Component {
     return classesArray;
   };
 
+  renderWeeksNumbers = () => {
+    const numbersArray = [];
+    for (let i = 1; i <= this.props.weeks.length; i++) {
+      numbersArray.push(i);
+    }
+    return numbersArray;
+  };
+
   render() {
     return (
       <div className="HeroWeeks-container">
 
         <div className="HeroWeeks-progress-container">
-          <p>	YOUR 12 WEEK PROGRESS</p>
+          <p>{`YOUR ${this.props.weeks.length} WEEK PROGRESS`}</p>
           <div className="HeroWeeks-bullets-container">
             {this.renderWeeksBullets().map((element) =>
               <span className={element}></span>
             )}
           </div>
           <div className="HeroWeeks-week-numbers-container">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-            <span>11</span>
-            <span>12</span>
+            {this.renderWeeksNumbers().map((el) =>
+              <span>{el}</span>
+            )}
           </div>
         </div>
 
