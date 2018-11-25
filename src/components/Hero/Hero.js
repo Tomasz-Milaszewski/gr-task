@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Hero.css";
 import HeroWeeks from '../HeroWeeks/HeroWeeks'
-// import HeroOptions from '../HeroOptions/HeroOptions'
+import HeroOptions from '../HeroOptions/HeroOptions'
 // import HeroDays from '../HeroDays/HeroDays'
 class Hero extends Component {
 
@@ -25,7 +25,7 @@ class Hero extends Component {
       <div className="Hero-container">
         <div className="Hero-weeks-options-container">
           <HeroWeeks weeks={this.state.weeks}></HeroWeeks>
-          {/* <HeroOptions></HeroOptions> */}
+          <HeroOptions></HeroOptions>
         </div>
         {/* <HeroDays></HeroDays> */}
       </div>

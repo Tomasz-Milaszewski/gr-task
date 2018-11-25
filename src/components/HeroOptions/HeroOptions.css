@@ -1,0 +1,22 @@
+.HeroOptions-container {
+  box-sizing: border-box;
+  width: 204px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 112px;
+  border-top: 1px solid rgb(240, 240, 240);
+  background: rgb(249, 249, 249);
+  font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
+}
+.HeroOptions-container p{
+  font-size: 9px;
+  color: #bdbdbd;
+  margin-bottom: 13px;
+}
+.HeroOptions-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
