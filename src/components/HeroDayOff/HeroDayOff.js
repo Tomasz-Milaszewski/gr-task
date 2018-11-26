@@ -9,8 +9,6 @@ class HeroDayOff extends Component {
     currentWeekDays: PropTypes.array
   }
 
-  getDayNumber
-
   render() {
     const days = this.props.currentWeekDays;
     return (

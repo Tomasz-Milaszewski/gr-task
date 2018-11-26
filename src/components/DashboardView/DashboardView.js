@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./DashboardView.css";
 import Navigation from '../Navigation/Navigation'
 import Hero from '../Hero/Hero'
-// import Footer from '../Footer/Footer'
+import Footer from '../Footer/Footer'
 
 class DashboardView extends Component {
     render() {
@@ -10,7 +10,7 @@ class DashboardView extends Component {
             <div>
                 <Navigation></Navigation>
                 <Hero></Hero>
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
             </div>
         )
     }

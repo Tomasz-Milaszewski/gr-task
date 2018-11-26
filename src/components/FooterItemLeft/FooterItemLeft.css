@@ -1,0 +1,29 @@
+.FooterItemLeft-container {
+  margin-top: 56px;
+  width: 305px;
+  font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
+  color: #828282;
+  border-right: 1px solid rgb(212, 212, 212);
+}
+.FooterItemLeft-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.FooterItemLeft-text {
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+.FooterItemLeft-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  background: none;
+  color: #a4a4a4;
+  height: 35px;
+  width: 108px;
+  border-radius: 5px;
+  border: 1px solid #b8b8b8;
+  cursor: pointer;
+}
