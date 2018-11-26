@@ -1,3 +1,9 @@
+.HeroDaysOn-container {
+  display: flex;
+}
+
+
+
 .HeroDaysOn-bode-shake {
   background: url('../../images/herodayson-bode-shake.png') no-repeat center bottom;
 }

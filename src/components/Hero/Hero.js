@@ -25,10 +25,21 @@ class Hero extends Component {
   }
 
   handleClickLeft = () => {
-    this.setState({ currentWeekNumber: this.state.currentWeekNumber - 1 })
+    this.setState({
+      currentWeekNumber: this.state.currentWeekNumber - 1,
+      currentWeekDays: this.state.weeks.find((el) => {
+        return el.weekNumber === (this.state.currentWeekNumber - 1)
+      }).days
+    })
   }
+
   handleClickRight = () => {
-    this.setState({ currentWeekNumber: this.state.currentWeekNumber + 1 })
+    this.setState({
+      currentWeekNumber: this.state.currentWeekNumber + 1,
+      currentWeekDays: this.state.weeks.find((el) => {
+        return el.weekNumber === (this.state.currentWeekNumber + 1)
+      }).days
+    })
   }
 
   render() {
