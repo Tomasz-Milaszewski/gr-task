@@ -14,14 +14,17 @@ class HeroDaysOn extends Component {
     console.log(days);
     return (
       <div className="HeroDaysOn-container">
-        {days.map((el, index) => 
-          <div className="HeroDaysOn-day-number">DAY{el.dayNumber}</div>
-            // {}
-
+        {days.map((day) =>
+          <div className="HeroDaysOn-single-day">
+            <div className="HeroDaysOn-day-number">DAY{day.dayNumber}</div>
+            {hours.map((hour) =>
+              <div className={day[`${hour}Shake`] === true ? "HeroDaysOn-meal-cont HeroDaysOn-bode-shake" : "HeroDaysOn-meal-cont"}>
+                <p className="HeroDaysOn-meal-name">{day[`${hour}Meal`]}</p>
+                {day[`${hour}Tick`] === true && <img src={tick} alt="" className="HeroDaysOn-tick"></img>}
+              </div>
+            )}
+          </div>
         )}
-          {/* <div className={this.props.day.sixAMShake === true ? "HeroDaysOn-meal HeroDaysOn-bode-shake" : "HeroDaysOn-meal"}>
-          <p className="HeroDaysOn-meal-name">{this.props.day.sixAMMeal}</p>
-          {this.props.day.sixAMTick === true && <img src={tick} alt="" className="HeroDaysOn-tick"></img>} */}
       </div>
     )
   }

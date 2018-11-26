@@ -1,8 +1,21 @@
 .HeroDaysOn-container {
   display: flex;
 }
+.HeroDaysOn-single-day {
 
+}
+.HeroDaysOn-day-number {
 
+}
+.HeroDaysOn-meal-cont {
+
+}
+.HeroDaysOn-meal-name {
+
+}
+.HeroDaysOn-tick {
+  
+}
 
 .HeroDaysOn-bode-shake {
   background: url('../../images/herodayson-bode-shake.png') no-repeat center bottom;
