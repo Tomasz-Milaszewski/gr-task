@@ -1,25 +1,54 @@
 .HeroDaysOn-container {
   display: flex;
+  font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
 }
 .HeroDaysOn-single-day {
-
+  width: 124px;
 }
 .HeroDaysOn-day-number {
-
+  height: 50px;
+  font-size: 24px;
+  color: #adbb0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid rgb(234, 234, 234);
 }
 .HeroDaysOn-meal-cont {
-
+  height: 90px;
+  border-top: 2px solid rgb(234, 234, 234);
+  border-right: 2px solid rgb(234, 234, 234);
 }
 .HeroDaysOn-meal-name {
-
+  font-size: 13px;
+  color: #828282;
+  margin: 13px;
 }
 .HeroDaysOn-tick {
-  
+ 
 }
-
 .HeroDaysOn-bode-shake {
   background: url('../../images/herodayson-bode-shake.png') no-repeat center bottom;
 }
 .HeroDaysOn-bode-shake-active {
   background: url('../../images/herodayson-bode-shake-active.png') no-repeat center bottom;
+}
+.HeroDaysOn-bottom {
+  height: 34px;
+  border-bottom: 2px solid rgb(212, 212, 212);
+  background: url('../../images/herodays-pattern.png') repeat center center;
+  font-size: 11px;
+  color: #828282;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid rgb(212, 212, 212);
+}
+.HeroDaysOn-workout {
+  height: 34px;
+  background: url('../../images/herodays-pattern.png') repeat center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid rgb(212, 212, 212);
 }
