@@ -32,8 +32,6 @@ class Hero extends Component {
   }
 
   render() {
-    console.log(this.state.weeks)
-    console.log(this.state.currentWeekDays)
     return (
       <div className="Hero-container">
         <div className="Hero-weeks-options-container">
@@ -41,7 +39,7 @@ class Hero extends Component {
           <HeroOptions></HeroOptions>
         </div>
         <div className="Hero-days-container">
-          <HeroDays></HeroDays>
+          <HeroDays currentWeekDays={this.state.currentWeekDays}></HeroDays>
         </div>
       </div>
     )

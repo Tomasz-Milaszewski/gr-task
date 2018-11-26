@@ -55,13 +55,13 @@ class HeroWeeks extends Component {
         <div className="HeroWeeks-progress-container">
           <p>{`YOUR ${this.props.weeks.length} WEEK PROGRESS`}</p>
           <div className="HeroWeeks-bullets-container">
-            {this.renderWeeksBullets().map((element) =>
-              <span className={element}></span>
+            {this.renderWeeksBullets().map((el, index) =>
+              <span key={index} className={el}></span>
             )}
           </div>
           <div className="HeroWeeks-week-numbers-container">
-            {this.renderWeeksNumbers().map((el) =>
-              <span>{el}</span>
+            {this.renderWeeksNumbers().map((el, index) =>
+              <span key={index}>{el}</span>
             )}
           </div>
         </div>
