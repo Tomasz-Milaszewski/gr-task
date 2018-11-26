@@ -6,7 +6,8 @@ import HeroDays from '../HeroDays/HeroDays'
 class Hero extends Component {
 
   state = {
-    weeks: []
+    weeks: [],
+    currentWeekNumber: 7
   }
 
   componentDidMount() {
@@ -19,12 +20,19 @@ class Hero extends Component {
       );
   }
 
+  handleClickLeft = () => {
+    this.setState({ currentWeekNumber: this.state.currentWeekNumber - 1 })
+  }
+  handleClickRight = () => {
+    this.setState({ currentWeekNumber: this.state.currentWeekNumber + 1 })
+  }
+
   render() {
     console.log(this.state.weeks)
     return (
       <div className="Hero-container">
         <div className="Hero-weeks-options-container">
-          <HeroWeeks weeks={this.state.weeks}></HeroWeeks>
+          <HeroWeeks weeks={this.state.weeks} currentWeekNumber={this.state.currentWeekNumber} handleClickLeft={this.handleClickLeft} handleClickRight={this.handleClickRight}></HeroWeeks>
           <HeroOptions></HeroOptions>
         </div>
         <div className="Hero-days-container">

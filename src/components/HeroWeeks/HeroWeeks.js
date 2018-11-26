@@ -3,18 +3,21 @@ import PropTypes from "prop-types";
 import "./HeroWeeks.css";
 class HeroWeeks extends Component {
 
-  state = {
-    currentWeek: 7
-  }
+  // state = {
+  //   currentWeek: 7
+  // }
 
   static propTypes = {
-    weeks: PropTypes.array
+    weeks: PropTypes.array,
+    currentWeekNumber: PropTypes.number,
+    handleClickLeft: PropTypes.func,
+    handleClickRight: PropTypes.func,
   }
 
   renderWeeksBullets = () => {
     const classesArray = [];
     for (let i = 1; i <= this.props.weeks.length; i++) {
-      if (i < this.state.currentWeek) {
+      if (i < this.props.currentWeekNumber) {
         if (i === 1) {
           classesArray.push('bullet-past')
         } else {
@@ -22,7 +25,7 @@ class HeroWeeks extends Component {
           classesArray.push('bullet-past');
         }
       } else {
-        if (i === this.state.currentWeek) {
+        if (i === this.props.currentWeekNumber) {
           i !== 1 && classesArray.push('line-future');
           classesArray.push('bullet-empty');
         } else {
@@ -42,11 +45,11 @@ class HeroWeeks extends Component {
     return numbersArray;
   };
 
-  handleClickLeft = () => {
-    this.setState({ currentWeek: this.state.currentWeek - 1 })
+  handleClickL = () => {
+    this.props.handleClickLeft();
   }
-  handleClickRight = () => {
-    this.setState({ currentWeek: this.state.currentWeek + 1 })
+  handleClickR = () => {
+    this.props.handleClickRight();
   }
 
   render() {
@@ -68,9 +71,9 @@ class HeroWeeks extends Component {
         </div>
 
         <div className="HeroWeeks-slider-container">
-          <button className="HeroWeeks-slider-arrow-left" style={(this.state.currentWeek === 1) ? { visibility: 'hidden' } : { visibility: 'visible' }} onClick={this.handleClickLeft}></button>
-          <p className="HeroWeeks-slider-current-week">{`Week ${this.state.currentWeek}`}</p>
-          <button className="HeroWeeks-slider-arrow-right" style={(this.state.currentWeek === this.props.weeks.length) ? { visibility: 'hidden' } : { visibility: 'visible' }} onClick={this.handleClickRight}></button>
+          <button className="HeroWeeks-slider-arrow-left" style={(this.props.currentWeekNumber === 1) ? { visibility: 'hidden' } : { visibility: 'visible' }} onClick={this.handleClickL}></button>
+          <p className="HeroWeeks-slider-current-week">{`Week ${this.props.currentWeekNumber}`}</p>
+          <button className="HeroWeeks-slider-arrow-right" style={(this.props.currentWeekNumber === this.props.weeks.length) ? { visibility: 'hidden' } : { visibility: 'visible' }} onClick={this.handleClickR}></button>
         </div>
       </div>
     )

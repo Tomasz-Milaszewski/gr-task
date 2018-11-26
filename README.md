@@ -16,3 +16,11 @@ Create a Single Page App (SPA), preferably with React based on given .psd design
 ### Other
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Lessons learned
+
+* PSD to HTML design
+* Adobe Extract via Creative Cloud & Dreamweaver
+* Lifting State Up in React:
+  https://reactjs.org/docs/lifting-state-up.html
+
