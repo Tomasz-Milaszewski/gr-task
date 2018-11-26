@@ -21,8 +21,8 @@ class HeroDayOff extends Component {
           <img src={smiley} alt="" className="HeroDayOff-main-image"></img>
         </div>
         <div className="HeroDayOff-printer">
-          <p className="HeroDayOff-printer-text">Print</p>
           <img src={printer} alt=""></img>
+          <p className="HeroDayOff-printer-text">Print</p>
         </div>
       </div>
     )

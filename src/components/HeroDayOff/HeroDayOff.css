@@ -28,21 +28,15 @@
   margin-bottom: 67px;
 }
 .HeroDayOff-printer {
-  height: 34px;
-  border-bottom: 2px solid rgb(212, 212, 212);
+  height: 70px;
   background: url('../../images/herodays-pattern.png') repeat center center;
-  font-size: 11px;
-  color: #828282;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 2px solid rgb(212, 212, 212);
+  border-bottom-right-radius: 5px;
 }
 .HeroDayOff-printer-text {
-  height: 34px;
-  background: url('../../images/herodays-pattern.png') repeat center center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-right: 2px solid rgb(212, 212, 212);
+  font-size: 18px;
+  color: #a2a2a2;
+  margin-left: 10px;
 }
