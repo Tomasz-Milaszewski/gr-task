@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./HeroDays.css";
 import HeroDaysHours from '../HeroDaysHours/HeroDaysHours'
 import HeroDaysOn from '../HeroDaysOn/HeroDaysOn'
-import HeroDaysOff from '../HeroDaysOff/HeroDaysOff'
+import HeroDayOff from '../HeroDayOff/HeroDayOff'
 class HeroDays extends Component {
 
   static propTypes = {
@@ -15,7 +15,7 @@ class HeroDays extends Component {
       <div className="HeroDays-container">
         <HeroDaysHours></HeroDaysHours>
         <HeroDaysOn currentWeekDays={this.props.currentWeekDays}></HeroDaysOn>
-        <HeroDaysOff currentWeekDays={this.props.currentWeekDays}></HeroDaysOff>
+        <HeroDayOff currentWeekDays={this.props.currentWeekDays}></HeroDayOff>
       </div>
     )
   }

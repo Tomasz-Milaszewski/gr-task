@@ -1,8 +1,8 @@
-.HeroDaysOff-container {
+.HeroDayOff-container {
   font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
   width: 126px;
 }
-.HeroDaysOff-day-number {
+.HeroDayOff-day-number {
   height: 50px;
   font-size: 24px;
   color: #adbb0c;
@@ -10,23 +10,24 @@
   justify-content: center;
   align-items: center;
 }
-.HeroDaysOff-main {
+.HeroDayOff-main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  height: 460px;
+  height: 458px;
   border-top: 2px solid rgb(234, 234, 234);
 }
-.HeroDaysOff-main-text {
+.HeroDayOff-main-text {
   font-size: 35px;
   color: #c2c2c2;
-  /* writing-mode: vertical-rl; */
-  transform: rotate(-90deg);
-  width: 300px;
+  white-space: nowrap;
+  transform: rotate(-90deg) translateX(158.5px);
 }
-
-.HeroDaysOff-printer {
+.HeroDayOff-main-image {
+  margin-bottom: 67px;
+}
+.HeroDayOff-printer {
   height: 34px;
   border-bottom: 2px solid rgb(212, 212, 212);
   background: url('../../images/herodays-pattern.png') repeat center center;
@@ -37,7 +38,7 @@
   align-items: center;
   border-right: 2px solid rgb(212, 212, 212);
 }
-.HeroDaysOff-printer-text {
+.HeroDayOff-printer-text {
   height: 34px;
   background: url('../../images/herodays-pattern.png') repeat center center;
   display: flex;
