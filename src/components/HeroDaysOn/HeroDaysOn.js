@@ -11,9 +11,8 @@ class HeroDaysOn extends Component {
   }
 
   render() {
-    const days = this.props.currentWeekDays;
+    const days = this.props.currentWeekDays.slice(0,6);
     const hours = ['sixAM', 'nine', 'twelve', 'three', 'sixPM'];
-    console.log(days);
     return (
       <div className="HeroDaysOn-container">
         {days.map((day) =>
@@ -37,27 +36,3 @@ class HeroDaysOn extends Component {
 }
 
 export default HeroDaysOn
-
-// currentWeekDays [
-//   index 0:
-//    {
-//     "dayNumber": "64",
-//     "isOn": true,
-//     "sixAMMeal": "Bod&middot;&emacr; Shake",
-//     "sixAMShake": true,
-//     "sixAMTick": true,
-//     "nineMeal": "Ham and Swiss Roll Ups",
-//     "nineShake": false,
-//     "nineTick": true,
-//     "twelveMeal": "Turkey Melt",
-//     "twelveShake": false,
-//     "twelveTick": true,
-//     "threeMeal": "Bod&middot;&emacr; Burn with Mozarella and Tomato Slices",
-//     "threeShake": false,
-//     "threeTick": true,
-//     "sixPMMeal": "Turkey Melt",
-//     "sixPMShake": false,
-//     "sixPMTick": false,
-//     "lowCarb": true,
-//     "workoutDone": true
-//   } itd ]

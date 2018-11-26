@@ -1,0 +1,47 @@
+.HeroDaysOff-container {
+  font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
+  width: 126px;
+}
+.HeroDaysOff-day-number {
+  height: 50px;
+  font-size: 24px;
+  color: #adbb0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HeroDaysOff-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 460px;
+  border-top: 2px solid rgb(234, 234, 234);
+}
+.HeroDaysOff-main-text {
+  font-size: 35px;
+  color: #c2c2c2;
+  /* writing-mode: vertical-rl; */
+  transform: rotate(-90deg);
+  width: 300px;
+}
+
+.HeroDaysOff-printer {
+  height: 34px;
+  border-bottom: 2px solid rgb(212, 212, 212);
+  background: url('../../images/herodays-pattern.png') repeat center center;
+  font-size: 11px;
+  color: #828282;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid rgb(212, 212, 212);
+}
+.HeroDaysOff-printer-text {
+  height: 34px;
+  background: url('../../images/herodays-pattern.png') repeat center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid rgb(212, 212, 212);
+}
