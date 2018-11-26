@@ -21,8 +21,10 @@ class HeroDaysOn extends Component {
             <div className="HeroDaysOn-day-number">DAY {day.dayNumber}</div>
             {hours.map((hour) =>
               <div className={day[`${hour}Shake`] === true ? "HeroDaysOn-meal-cont HeroDaysOn-bode-shake" : "HeroDaysOn-meal-cont"}>
-                <p className="HeroDaysOn-meal-name">{day[`${hour}Meal`]}</p>
-                {day[`${hour}Tick`] === true && <img src={tick} alt="" className="HeroDaysOn-tick"></img>}
+                <p className="HeroDaysOn-meal-name">
+                  {day[`${hour}Tick`] === true && <img src={tick} alt="" className="HeroDaysOn-tick" align="top"></img>}
+                  {day[`${hour}Meal`]}
+                </p>
               </div>
             )}
             <div className="HeroDaysOn-bottom">{day.lowCarb === true ? 'LOW-CARB' : 'HIGH-CARB'}</div>

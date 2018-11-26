@@ -3,7 +3,7 @@
   font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
 }
 .HeroDaysOn-single-day {
-  width: 124px;
+  width: 126px;
 }
 .HeroDaysOn-day-number {
   height: 50px;
@@ -15,17 +15,26 @@
   border-right: 2px solid rgb(234, 234, 234);
 }
 .HeroDaysOn-meal-cont {
+  display: flex;
+  justify-content: space-between;
   height: 90px;
   border-top: 2px solid rgb(234, 234, 234);
   border-right: 2px solid rgb(234, 234, 234);
 }
 .HeroDaysOn-meal-name {
+  width: 105px;
   font-size: 13px;
   color: #828282;
-  margin: 13px;
+  margin-left: 13px;
+  margin-top: 8px;
+  margin-right: 6px;
+  line-height: 1.3em;
 }
 .HeroDaysOn-tick {
- 
+  height: 16px;
+  width: 17px;
+  vertical-align: top;
+  float: right;
 }
 .HeroDaysOn-bode-shake {
   background: url('../../images/herodayson-bode-shake.png') no-repeat center bottom;
