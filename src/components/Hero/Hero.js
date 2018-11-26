@@ -7,7 +7,8 @@ class Hero extends Component {
 
   state = {
     weeks: [],
-    currentWeekNumber: 7
+    currentWeekNumber: 7,
+    currentWeekDays: []
   }
 
   componentDidMount() {
@@ -15,7 +16,10 @@ class Hero extends Component {
       .then(response => response.json())
       .then(objectOfWeeks =>
         this.setState({
-          weeks: Object.entries(objectOfWeeks).map(([id, other]) => ({ id, ...other }))
+          weeks: Object.entries(objectOfWeeks).map(([id, other]) => ({ id, ...other })),
+          currentWeekDays: Object.entries(objectOfWeeks).map(([id, other]) => ({ id, ...other })).find((el) => {
+            return el.weekNumber === this.state.currentWeekNumber
+          }).days
         })
       );
   }
@@ -29,6 +33,7 @@ class Hero extends Component {
 
   render() {
     console.log(this.state.weeks)
+    console.log(this.state.currentWeekDays)
     return (
       <div className="Hero-container">
         <div className="Hero-weeks-options-container">

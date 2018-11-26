@@ -3,10 +3,6 @@ import PropTypes from "prop-types";
 import "./HeroWeeks.css";
 class HeroWeeks extends Component {
 
-  // state = {
-  //   currentWeek: 7
-  // }
-
   static propTypes = {
     weeks: PropTypes.array,
     currentWeekNumber: PropTypes.number,

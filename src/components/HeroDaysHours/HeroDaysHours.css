@@ -6,6 +6,7 @@
   font-size: 13px;
   color: #828282;
   border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .HeroDaysHours-container b{
   font-weight: bold;
