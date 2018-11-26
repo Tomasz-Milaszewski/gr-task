@@ -1,20 +1,20 @@
-.FooterItemLeft-container {
+.FooterItemRight-container {
   margin-top: 56px;
+  margin-left: 48px;
   width: 305px;
   font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
   color: #828282;
-  border-right: 1px solid rgb(212, 212, 212);
 }
-.FooterItemLeft-title {
+.FooterItemRight-title {
   font-size: 28px;
   margin-bottom: 20px;
 }
-.FooterItemLeft-text {
+.FooterItemRight-text {
   font-size: 15px;
   margin-bottom: 20px;
   line-height: 1.5em;
 }
-.FooterItemLeft-button {
+.FooterItemRight-button {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -27,6 +27,6 @@
   border: 1px solid #b8b8b8;
   cursor: pointer;
 }
-.FooterItemLeft-button:hover {
+.FooterItemRight-button:hover {
   background: #7c7c7c;
 }

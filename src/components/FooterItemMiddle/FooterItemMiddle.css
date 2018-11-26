@@ -1,7 +1,7 @@
 .FooterItemMiddle-container {
   margin-top: 56px;
   margin-left: 48px;
-  width: 305px;
+  width: 318px;
   font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
   color: #828282;
   border-right: 1px solid rgb(212, 212, 212);
@@ -37,4 +37,8 @@
 }
 .FooterItemMiddle-button2 {
   width: 127px;
+}
+.FooterItemMiddle-button1:hover,
+.FooterItemMiddle-button2:hover {
+  background: #7c7c7c;
 }

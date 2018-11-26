@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Footer.css";
 import FooterItemLeft from '../FooterItemLeft/FooterItemLeft'
 import FooterItemMiddle from '../FooterItemMiddle/FooterItemMiddle'
-// import FooterItemRight from '../FooterItemRight/FooterItemRight'
+import FooterItemRight from '../FooterItemRight/FooterItemRight'
 class Footer extends Component {
 
   render() {
@@ -10,7 +10,7 @@ class Footer extends Component {
       <div className="Footer-container">
         <FooterItemLeft></FooterItemLeft>
         <FooterItemMiddle></FooterItemMiddle>
-        {/* <FooterItemRight></FooterItemRight> */}
+        <FooterItemRight></FooterItemRight>
       </div>
     )
   }

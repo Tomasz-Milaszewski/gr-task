@@ -34,9 +34,13 @@
   justify-content: center;
   align-items: center;
   border-bottom-right-radius: 5px;
+  cursor: pointer;
 }
 .HeroDayOff-printer-text {
   font-size: 18px;
   color: #a2a2a2;
   margin-left: 10px;
+}
+.HeroDayOff-printer:hover {
+  background: #7c7c7c;
 }

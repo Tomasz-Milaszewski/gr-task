@@ -25,12 +25,12 @@
   height: 10px;
 }
 span.bullet-past {
-  background: #addb0c;
+  background: #adbb0c;
   border-radius: 50%;
 }
 span.line-past {
   height: 2px;
-  background: #addb0c;
+  background: #adbb0c;
   border-top: 4px solid rgb(249,249,249);
   border-bottom: 4px solid rgb(249,249,249);
 }
