@@ -16,9 +16,9 @@ class Navigation extends Component {
         return (
             <nav className="Navigation-container">
                 <div className="Navigation-content-container">
-                    <div className={this.state.activeViewName === "DASHBOARD" ? "Navigation-content-active" : "Navigation-content-passive"}><a href="" onClick={this.handleClick}>DASHBOARD<hr /></a></div>
-                    <div className={this.state.activeViewName === "RECIPES" ? "Navigation-content-active" : "Navigation-content-passive"}><a href="" onClick={this.handleClick}>RECIPES<hr /></a></div>
-                    <div className={this.state.activeViewName === "CHALLENGE" ? "Navigation-content-active" : "Navigation-content-passive"}><a href="" onClick={this.handleClick}>CHALLENGE<hr /></a></div>
+                    <div id="Dashboard" className={this.state.activeViewName === "DASHBOARD" ? "Navigation-content-active" : "Navigation-content-passive"}><a href="#Dashboard" onClick={this.handleClick}>DASHBOARD<hr /></a></div>
+                    <div id="Recipes" className={this.state.activeViewName === "RECIPES" ? "Navigation-content-active" : "Navigation-content-passive"}><a href="#Recipes" onClick={this.handleClick}>RECIPES<hr /></a></div>
+                    <div id="Challenge" className={this.state.activeViewName === "CHALLENGE" ? "Navigation-content-active" : "Navigation-content-passive"}><a href="#Challenge" onClick={this.handleClick}>CHALLENGE<hr /></a></div>
                 </div>
                 <div className="Navigation-user-container">
                     <div className="Navigation-user-image"></div>
