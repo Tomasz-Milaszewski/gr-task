@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   height: 112px;
-  border-top: 1px solid rgb(240, 240, 240);
+  /* border-top: 1px solid rgb(240, 240, 240); */
   background: rgb(249, 249, 249);
   font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
 }

@@ -62,7 +62,7 @@ code {
 
 /* added */
 body {
-	margin: 0px 23px;
+	background: rgb(249, 249, 249);
 }
 a {
 	text-decoration: none;

@@ -7,7 +7,7 @@ import Footer from '../Footer/Footer'
 class DashboardView extends Component {
     render() {
         return (
-            <div>
+            <div className="Dashboard-container">
                 <Navigation></Navigation>
                 <Hero></Hero>
                 <Footer></Footer>

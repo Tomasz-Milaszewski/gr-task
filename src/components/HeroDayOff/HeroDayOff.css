@@ -1,6 +1,7 @@
 .HeroDayOff-container {
   font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
   width: 126px;
+  background: #ffffff;
 }
 .HeroDayOff-day-number {
   height: 50px;
