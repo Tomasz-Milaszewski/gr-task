@@ -47,7 +47,7 @@ class HeroOptions extends Component {
       <div className="HeroOptions-container">
         <p>SELECT YOUR PROTEIN OPTIONS</p>
         <div className="HeroOptions-icons-container">
-          <img name='broccoli' src={(this.state.broccoliClicks % 2 === 0 ? broccoli_active : broccoli_nonactive)} alt="Broccoli" onClick={this.handleClick} />
+          <img name='broccoli' src={(this.state.broccoliClicks % 2 === 0 ? broccoli_active : broccoli_nonactive)} alt="Broccoli" onClick={this.handleClick}/>
           <img name='cheese' src={(this.state.cheeseClicks % 2 === 0 ? cheese_active : cheese_nonactive)} alt="Cheese" onClick={this.handleClick} />
           <img name='meat' src={(this.state.meatClicks % 2 === 0 ? meat_active : meat_nonactive)} alt="Meat" onClick={this.handleClick} />
           <img name='fish' src={(this.state.fishClicks % 2 === 0 ? fish_active : fish_nonactive)} alt="Fish" onClick={this.handleClick} />

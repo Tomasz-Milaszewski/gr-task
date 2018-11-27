@@ -75,6 +75,9 @@ span.line-future {
   border: 1px solid #c0c0c0;
   cursor: pointer;
 }
+.HeroWeeks-slider-container button:hover {
+  border: 2px solid #ff801a;
+}
 .HeroWeeks-slider-container button:first-child {
   background: url('../../images/heroweeks-slider-arrow-left.png') no-repeat center center;
 }
