@@ -15,11 +15,11 @@ class HeroDaysOn extends Component {
     const hours = ['sixAM', 'nine', 'twelve', 'three', 'sixPM'];
     return (
       <div className="HeroDaysOn-container">
-        {days.map((day) =>
-          <div className="HeroDaysOn-single-day">
+        {days.map((day, dayIndex) =>
+          <div key={dayIndex} className="HeroDaysOn-single-day">
             <div className="HeroDaysOn-day-number">DAY {day.dayNumber}</div>
-            {hours.map((hour) =>
-              <div className={day[`${hour}Shake`] === true ? "HeroDaysOn-meal-cont HeroDaysOn-bode-shake" : "HeroDaysOn-meal-cont"}>
+            {hours.map((hour, hourIndex) =>
+              <div key={`${dayIndex}${hourIndex}`} className={day[`${hour}Shake`] === true ? "HeroDaysOn-meal-cont HeroDaysOn-bode-shake" : "HeroDaysOn-meal-cont"}>
                 <p className="HeroDaysOn-meal-name">
                   {day[`${hour}Tick`] === true && <img src={tick} alt="" className="HeroDaysOn-tick" align="top"></img>}
                   {day[`${hour}Meal`]}
