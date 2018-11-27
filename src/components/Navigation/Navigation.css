@@ -72,7 +72,7 @@
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 978px) {
+@media (max-width: 992px) {
 	.Navigation-container {
 		width: 100%;
 		margin-left: 12%;
@@ -86,7 +86,7 @@
 	}
 }
 
-@media (max-width: 492px) {
+@media (max-width: 576px) {
 	.Navigation-container {
 		width: 100%;
 		margin-left: 0px;
