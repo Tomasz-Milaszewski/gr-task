@@ -76,15 +76,12 @@
     display: flex;
     width: 576px;
   }
-  .HeroDaysOn-day-number {
+  .HeroDaysOn-day-number,
+  .HeroDaysOn-bottom {
     height: 110px;
     width: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-right: 1px solid rgb(234, 234, 234);
     border-bottom: 1px solid rgb(234, 234, 234);
-    text-align: center;
   }
   .HeroDaysOn-day-number span {
     display: none;
@@ -103,8 +100,6 @@
     margin-right: 5px;
   }
   .HeroDaysOn-bottom {
-    height: 110px;
-    width: 48px;
     border-bottom: 1px solid rgb(212, 212, 212);
     border-right: 1px solid rgb(212, 212, 212);
   }
@@ -114,10 +109,6 @@
   .HeroDaysOn-workout {
     height: 110px;
     width: 48px;
-    background: url('../../images/herodays-pattern.png') repeat center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-right: none;
     border-bottom: 1px solid rgb(212, 212, 212);
   }

@@ -13,7 +13,7 @@ class HeroDayOff extends Component {
     const days = this.props.currentWeekDays;
     return (
       <div className="HeroDayOff-container">
-        <div className="HeroDayOff-day-number">DAY {days.length !== 0 && days[6].dayNumber}</div>
+        <div className="HeroDayOff-day-number"><span>DAY&nbsp;</span>{days.length !== 0 && days[6].dayNumber}</div>
         <div className="HeroDayOff-main">
           <div className="HeroDayOff-main-text">GUILT-FREE DAY</div>
           <img src={smiley} alt="" className="HeroDayOff-main-image"></img>
