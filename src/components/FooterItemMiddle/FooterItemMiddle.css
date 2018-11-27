@@ -42,3 +42,32 @@
 .FooterItemMiddle-button2:hover {
   background: #7c7c7c;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 978px) {
+  .FooterItemMiddle-container {
+    margin-top: 5.7%;
+    margin-left: 3%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 792px) {
+  .FooterItemMiddle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    min-width: 320px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    border-right: none;
+  }
+  .FooterItemMiddle-title {
+    margin-bottom: 10px;
+  }
+  .FooterItemMiddle-text {
+    margin-bottom: 10px;
+  }
+}
