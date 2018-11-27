@@ -1,15 +1,16 @@
 .HeroWeeks-container {
+  width: 650px;
   box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 112px;
-  /* border-top: 1px solid rgb(240, 240, 240); */
   background: rgb(249, 249, 249);
   font-family: "Helvetica Neue", "Arial Regular", Helvetica, Arial, sans-serif;
 }
 /* progress bullets */
 .HeroWeeks-progress-container{
-  width: 338px;
+  min-width: 240px;
 }
 .HeroWeeks-progress-container p{
   font-size: 9px;
@@ -66,7 +67,6 @@ span.line-future {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-right: 134px;
 }
 .HeroWeeks-slider-container button {
   width: 26px;
@@ -83,7 +83,46 @@ span.line-future {
 }
 .HeroWeeks-slider-current-week {
   width: 162px;
+  white-space: nowrap;
   font-size: 48px;
   color: #ff801a;
   margin: 0px 44px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 978px) {
+  .HeroWeeks-container {
+    width: 66.45%;
+  }
+  .HeroWeeks-slider-current-week {
+    width: 100%;
+    white-space: nowrap;
+    margin: 0px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .HeroWeeks-container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .HeroWeeks-progress-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .HeroWeeks-bullets-container {
+    margin-top: 6px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+  .HeroWeeks-week-numbers-container{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bdbdbd;
+  }
+  .HeroWeeks-slider-container{
+    padding-bottom: 5px;
+  }
 }

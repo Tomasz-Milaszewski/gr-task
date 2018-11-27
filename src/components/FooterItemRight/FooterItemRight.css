@@ -54,8 +54,10 @@
   }
   .FooterItemRight-title {
     margin-bottom: 10px;
+    text-align: center;
   }
   .FooterItemRight-text {
     margin-bottom: 10px;
+    text-align: center;
   }
 }

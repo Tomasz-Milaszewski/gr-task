@@ -66,8 +66,10 @@
   }
   .FooterItemMiddle-title {
     margin-bottom: 10px;
+    text-align: center;
   }
   .FooterItemMiddle-text {
     margin-bottom: 10px;
+    text-align: center;
   }
 }

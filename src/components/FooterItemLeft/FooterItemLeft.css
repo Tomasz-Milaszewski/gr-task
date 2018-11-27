@@ -52,8 +52,10 @@
   }
   .FooterItemLeft-title {
     margin-bottom: 10px;
+    text-align: center;
   }
   .FooterItemLeft-text {
     margin-bottom: 10px;
+    text-align: center;
   }
 }
