@@ -17,7 +17,7 @@ class HeroDaysOn extends Component {
       <div className="HeroDaysOn-container">
         {days.map((day, dayIndex) =>
           <div key={dayIndex} className="HeroDaysOn-single-day">
-            <div className="HeroDaysOn-day-number">DAY {day.dayNumber}</div>
+            <div className="HeroDaysOn-day-number"><span>DAY&nbsp;</span>{day.dayNumber}</div>
             {hours.map((hour, hourIndex) =>
               <div key={`${dayIndex}${hourIndex}`} className={day[`${hour}Shake`] === true ? "HeroDaysOn-meal-cont HeroDaysOn-bode-shake" : "HeroDaysOn-meal-cont"}>
                 <p className="HeroDaysOn-meal-name">
@@ -26,7 +26,7 @@ class HeroDaysOn extends Component {
                 </p>
               </div>
             )}
-            <div className="HeroDaysOn-bottom">{day.lowCarb === true ? 'LOW-CARB' : 'HIGH-CARB'}</div>
+            <div className="HeroDaysOn-bottom">{day.lowCarb === true ? 'LOW' : 'HIGH'}</div>
             <div className="HeroDaysOn-workout"> {day.workoutDone === true ? <img src={workout_done} alt=""></img> : <img src={workout_notdone} alt=""></img>}</div>
           </div>
         )}

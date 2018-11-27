@@ -54,6 +54,9 @@
   align-items: center;
   border-right: 2px solid rgb(212, 212, 212);
 }
+.HeroDaysOn-bottom::after {
+  content: '-CARB'
+}
 .HeroDaysOn-workout {
   height: 34px;
   background: url('../../images/herodays-pattern.png') repeat center center;
@@ -61,4 +64,61 @@
   justify-content: center;
   align-items: center;
   border-right: 2px solid rgb(212, 212, 212);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .HeroDaysOn-container {
+    display: block;
+    width: 576px;
+  }
+  .HeroDaysOn-single-day {
+    display: flex;
+    width: 576px;
+  }
+  .HeroDaysOn-day-number {
+    height: 110px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(234, 234, 234);
+    text-align: center;
+  }
+  .HeroDaysOn-day-number span {
+    display: none;
+  }
+  .HeroDaysOn-meal-cont {
+    height: 110px;
+    width: 85px;
+    border-top: none;
+    border-bottom: 1px solid rgb(234, 234, 234);
+    border-right: 1px solid rgb(234, 234, 234);
+  }
+  .HeroDaysOn-meal-name {
+    width: 85px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .HeroDaysOn-bottom {
+    height: 110px;
+    width: 48px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    border-right: 1px solid rgb(212, 212, 212);
+  }
+  .HeroDaysOn-bottom::after {
+    content: none;
+  }
+  .HeroDaysOn-workout {
+    height: 110px;
+    width: 48px;
+    background: url('../../images/herodays-pattern.png') repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 1px solid rgb(212, 212, 212);
+  }
 }
