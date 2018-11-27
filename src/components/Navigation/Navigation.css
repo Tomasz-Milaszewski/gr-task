@@ -1,5 +1,6 @@
 .Navigation-wide {
 	background: #ffffff;
+	min-width: 320px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -47,6 +48,7 @@
 	align-items: center;
 	margin-top: 21px;
 	margin-bottom: 26px;
+	min-width: 140px;
 }
 .Navigation-user-image {
 	width: 32px;
@@ -67,4 +69,35 @@
 	height: 15px;
 	background-color: #ffffff;
 	background: url('../../images/navigation-chevron.png') no-repeat center center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 978px) {
+	.Navigation-container {
+		width: 100%;
+		margin-left: 12%;
+	}
+	.Navigation-content-container {
+		width: 39%;
+	}
+	.Navigation-content-active,
+	.Navigation-content-passive {
+		margin-left: 9.5%;
+	}
+}
+
+@media (max-width: 492px) {
+	.Navigation-container {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.Navigation-content-container {
+		font-size: 12px;
+	}
+	.Navigation-user-container {
+		min-width: 50px;
+	}
+	.Navigation-user-name {
+		display: none;
+	}
 }
