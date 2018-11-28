@@ -41,3 +41,50 @@
 .HeroDaysHours-bottom-workout small{
   font-size: 8px;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .HeroDaysHours-container {
+    display: flex;
+    border-top-right-radius: 5px;
+    width: 576px;
+    height: 30px;
+  }
+  .HeroDaysHours-top,
+  .HeroDaysHours-bottom,
+  .HeroDaysHours-bottom-workout,
+  .HeroDaysHours-hour,
+  .HeroDaysHours-hour-last {
+    width: 48px;
+    height: 30px;
+    border-right: 1px solid rgb(212, 212, 212);
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .HeroDaysHours-top::after {
+    content: "DAY";
+    font-weight: bold;
+  }
+  .HeroDaysHours-hour,
+  .HeroDaysHours-hour-last {
+    width: 85px;
+  }
+  .HeroDaysHours-bottom::after {
+    content: "CARB";
+    font-weight: bold;
+  }
+  .HeroDaysHours-bottom-workout {
+    border-right: none;
+    font-size: 0;
+  }
+  .HeroDaysHours-bottom-workout::before {
+    content: "GYM";
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .HeroDaysHours-bottom-workout small{
+    display: none;
+  }
+}
