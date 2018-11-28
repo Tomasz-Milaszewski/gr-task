@@ -27,6 +27,9 @@
   border: 1px solid #b8b8b8;
   cursor: pointer;
 }
+.FooterItemLeft-button:focus {
+  outline: none;
+}
 .FooterItemLeft-button:hover {
   background: #7c7c7c;
 }
