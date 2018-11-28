@@ -6,7 +6,7 @@ Create a Single Page App (SPA), preferably with React based on given .psd design
 
 ### Technologies and tools
 
-* React.JS
+* ReactJS
 * CSS3
 * Vanilla JS
 * Photoshop
@@ -17,6 +17,7 @@ Create a Single Page App (SPA), preferably with React based on given .psd design
 
 * This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 * Media query breakpoints: 576px, 768px, 992px
+* Data is prepared in .json format (local file) ready to be use in backend
 
 ### Lessons learned
 
@@ -24,4 +25,10 @@ Create a Single Page App (SPA), preferably with React based on given .psd design
 * Adobe Extract via Creative Cloud & Dreamweaver
 * Lifting State Up in React:
   https://reactjs.org/docs/lifting-state-up.html
+* CSS: *button:focus*, *white-space: nowrap*, *transform: rotate & translate*  
 
+### To do
+
+* Link other views (Recipes, Challenge) via React Router
+* Develop user authentication panel
+* Enable multiple 'guilt-free' days :-) 
