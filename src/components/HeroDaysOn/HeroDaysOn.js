@@ -10,13 +10,26 @@ class HeroDaysOn extends Component {
     currentWeekDays: PropTypes.array
   }
 
+highlightActiveDay = (event) => {
+  const singleDay = event.currentTarget;
+  singleDay.style.outline = '3px solid #ff801a';
+  singleDay.style.position = "relative";
+  singleDay.style.ZIndex = "1";
+}
+removeHighlightActiveDay = (event) => {
+  const singleDay = event.currentTarget;
+  singleDay.style.outline = 'initial';
+  singleDay.style.position = "static";
+  singleDay.style.ZIndex = "0";
+}
+
   render() {
     const days = this.props.currentWeekDays.slice(0,6);
     const hours = ['sixAM', 'nine', 'twelve', 'three', 'sixPM'];
     return (
       <div className="HeroDaysOn-container">
         {days.map((day, dayIndex) =>
-          <div key={dayIndex} className="HeroDaysOn-single-day">
+          <div key={dayIndex} className="HeroDaysOn-single-day" onMouseOver={this.highlightActiveDay} onMouseOut={this.removeHighlightActiveDay}>
             <div className="HeroDaysOn-day-number"><span>DAY&nbsp;</span>{day.dayNumber}</div>
             {hours.map((hour, hourIndex) =>
               <div key={`${dayIndex}${hourIndex}`} className={day[`${hour}Shake`] === true ? "HeroDaysOn-meal-cont HeroDaysOn-bode-shake" : "HeroDaysOn-meal-cont"}>

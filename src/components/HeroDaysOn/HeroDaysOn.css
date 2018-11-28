@@ -6,9 +6,6 @@
   width: 126px;
   background: #ffffff;
 }
-.HeroDaysOn-single-day:hover {
-  border: 2px solid #ff801a;
-}
 .HeroDaysOn-day-number {
   height: 50px;
   font-size: 24px;
