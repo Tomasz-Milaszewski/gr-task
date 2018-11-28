@@ -106,6 +106,7 @@ span.line-future {
     margin: 0px 15px;
   }
 }
+
 @media (max-width: 768px) {
   .HeroWeeks-container {
     flex-direction: column;
